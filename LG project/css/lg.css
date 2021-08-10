@@ -1,0 +1,463 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("https://image.freepik.com/free-photo/old-camera-notebook-laptop-with-blue-pencil-cup-cappuccino-white-background_23-2147979092.jpg");
+	
+	
+}
+.headline h1{
+	text-align: center;
+	text-decoration: none;
+	font-size: 3em;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+nav{
+	width: 100%;
+	background-color: rgb(0, 0,0,0.9);
+	overflow: hidden;
+}
+nav ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 7px;
+}
+nav ul li{
+	display: inline-block;
+
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 20px 35px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+}
+.logo{
+	float: left;
+	padding: 10px;
+}
+div h1{
+	text-align: center;
+	padding: 25px ;
+    color: firebrick;
+}
+
+
+/*syles for about page*/
+.about p{
+	text-align: justify;
+	text-indent: 20px;
+	padding: 15px;
+	margin: 20px;
+	padding-bottom: 0;
+	display: block;
+
+}
+.about h2{
+	text-align: center;
+	font-size: 1.8em;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.about h3{
+	text-align: center;
+	font-size: 25px;
+	
+}
+
+
+
+
+/*  Styles for footer    */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 36px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+/* css code for card    */
+.product-list{
+	padding:60px 25px;
+	min-height: 100px;
+	background-color:#00695C;
+}
+.product-list h2{
+	text-align: center;
+	padding: 60px 70px 80px 25px;
+	font-style: italic;
+}
+
+.product-list .item{
+	flex-basis: 25%;
+	max-width: 25%;
+	padding:0 35px;
+	margin-bottom: 50px; 
+}
+.product-list .product .product-thumb img{
+	width: 100%;
+	display: block;
+}
+.product-list .product .product-thumb{
+	position: relative;
+	overflow: hidden;
+}
+.product-list .product .product-thumb .product-button{
+	/*background-color: red;*/
+	position: absolute;
+	left:0;
+	bottom:15px;
+	width: 100%;
+	text-align: center;
+	transition: all .5s ease;
+	transform: translateY(100%);
+	opacity:0;
+	z-index:10;
+}
+.product-list .product:hover .product-thumb .product-button{
+	opacity: 1;
+	transform: translateY(0%);
+}
+.product-list .product .product-thumb .product-button a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border:1px solid #111111;
+	background-color: #ffffff;
+	text-align:center;
+	transition: all .5s ease;
+}
+.product-list .product .product-thumb .product-button a .fa{
+	line-height: 38px;
+	color:#111111;
+	transition: all .5s ease;
+}
+.product-list .product .product-thumb .product-button a:hover{
+	background-color: #111111;
+}
+.product-list .product .product-thumb .product-button a:hover .fa{
+	color:#ffffff;
+}
+.product-list .product .product-thumb .product-styles{
+	position: absolute;
+	top:15px;
+	right:15px;
+	z-index:10;
+	opacity:0;
+	transition: opacity .5s ease;
+}
+.product-list .product:hover .product-thumb .product-styles{
+	opacity: 1;
+}
+.product-list .product .product-thumb .product-styles span{
+	height: 10px;
+	width: 10px;
+	display: block;
+	margin-bottom: 9px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+}
+.product-list .product .product-thumb .product-styles span.active-style::before{
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	height: 16px;
+	width: 16px;
+	border:1px solid #111111;
+	left:0;
+	top:0;
+	margin-left:-3px;
+	margin-top: -3px;
+	border-radius: 50%;
+}
+.product-list .product .product-info{
+	text-align: center;
+}
+
+.product-list .product .product-info .product-name{
+	color:#ffffff;
+	margin:20px 0 10px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.product-list .product .product-info .product-cat{
+	color:#ffffff;
+	margin:12px 0 12px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.product-list .product .product-info .product-price{
+	color:#ffffff;
+	margin:12px 0 12px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+/*responsive*/
+
+@media(max-width: 991px){
+	.product-list .item {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+}
+@media(max-width: 575px){
+	.product-list .item {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+}
+
+
+
+
+/*  css style code for home slide*/
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+#btnlink{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/* css style for moreinfo page */
+.resions 
+{
+	text-align: center;
+}
+
+.list ol
+{	
+	margin: 50px;
+	padding:10px;
+}
+.list ol li
+{
+	padding: 10px;
+}
+
+
+.btnforinfo button{
+	
+  padding: 14px 40px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  
+
+
+}
+	
+
+
+
+
